@@ -7,6 +7,7 @@ import sajekImg from './assets/sajek.png'
 import bandarbanImg from './assets/bandarban.png'
 import rangamatiImg from './assets/rangamati.png'
 import saintMartinImg from './assets/saintmartin.png'
+import sunamganjImg from './assets/sunamganj.png'
 import './App.css'
 
 
@@ -44,10 +45,35 @@ function App() {
           {/* Sajek */}
  <div className='border rounded-lg overflow-hidden shadow-lg'>
             <img src={sajekImg} alt="Sajek" className='w-full h-48 object-cover' />
-            <div className='p-4'>
+           <div className='flex justify-between items-center p-3'>
+
+ <div className='p-4'>
               <h3 className='text-xl font-semibold mb-2'>Sajek</h3>
               <p className='text-gray-600'>Sajek</p>
             </div>
+            <div>
+              {/* Open the modal using document.getElementById('ID').showModal() method */}
+<button className="btn" onClick={()=>document.getElementById('my_modal_1').showModal()}>Details</button>
+<dialog id="my_modal_1" className="modal">
+  <div className="modal-box">
+    <h3 className="font-bold text-lg">Hello!</h3>
+    <p className="py-4">Press ESC key or click the button below to close</p>
+    <div className="modal-action">
+      <form method="dialog">
+        {/* if there is a button in form, it will close the modal */}
+        <button className="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+            </div>
+
+
+
+
+
+           </div>
+           <button className='bg-blue-600 text-white px-6 py-3 rounded-lg  transition duration-300 text-center'>Book Now</button>
           </div>
 
           {/* Bandarban */}
@@ -82,6 +108,15 @@ function App() {
             <img src={saintMartinImg} alt="Saint Martin" className='w-full h-48 object-cover' />
             <div className='p-4'>
               <h3 className='text-xl font-semibold mb-2'>Saint Martin</h3>
+              <p className='text-gray-600'>Relax on the world's longest natural sea beach with stunning views.</p>
+            </div>
+          </div>
+
+             {/* Sunamganj */}
+          <div className='border rounded-lg overflow-hidden shadow-lg'>
+            <img src={sunamganjImg} alt="Sunamganj" className='w-full h-48 object-cover' />
+            <div className='p-4'>
+              <h3 className='text-xl font-semibold mb-2'>Tanguar Haor</h3>
               <p className='text-gray-600'>Relax on the world's longest natural sea beach with stunning views.</p>
             </div>
           </div>

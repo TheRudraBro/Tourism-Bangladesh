@@ -8,6 +8,7 @@ import bandarbanImg from './assets/bandarban.png'
 import rangamatiImg from './assets/rangamati.png'
 import saintMartinImg from './assets/saintmartin.png'
 import sunamganjImg from './assets/sunamganj.png'
+import kuakataImg from './assets/kuakata.png'
 import './App.css'
 
 
@@ -49,7 +50,7 @@ function App() {
 
  <div className='p-4'>
               <h3 className='text-xl font-semibold mb-2'>Sajek</h3>
-              <p className='text-gray-600'>Sajek</p>
+              <p className='text-gray-600'>Enjoy cloud-kissed hills, breathtaking sunsets, and serene views above the clouds.</p>
             </div>
             <div>
               {/* Open the modal using document.getElementById('ID').showModal() method */}
@@ -57,7 +58,10 @@ function App() {
 <dialog id="my_modal_1" className="modal">
   <div className="modal-box">
     <h3 className="font-bold text-lg">Hello!</h3>
-    <p className="py-4">Press ESC key or click the button below to close</p>
+    <p className="py-4">
+{/* Details About Tour */}
+
+    </p>
     <div className="modal-action">
       <form method="dialog">
         {/* if there is a button in form, it will close the modal */}
@@ -73,7 +77,12 @@ function App() {
 
 
            </div>
-           <button className='bg-blue-600 text-white px-6 py-3 rounded-lg  transition duration-300 text-center'>Book Now</button>
+          <div className="flex justify-center pb-4">
+  <button className="bg-blue-600 text-white px-6 py-3 rounded-lg transition duration-300">
+    Book Now
+  </button>
+</div>
+
           </div>
 
           {/* Bandarban */}
@@ -81,7 +90,7 @@ function App() {
             <img src={bandarbanImg} alt="Bandarban" className='w-full h-48 object-cover' />
             <div className='p-4'>
               <h3 className='text-xl font-semibold mb-2'>Bandarban</h3>
-              <p className='text-gray-600'>Bandarban</p>
+              <p className='text-gray-600'>Explore majestic hills, waterfalls, and untouched natural beauty in Bangladesh’s most adventurous region.</p>
             </div>
           </div>
 
@@ -90,7 +99,7 @@ function App() {
             <img src={rangamatiImg} alt="Rangamati" className='w-full h-48 object-cover' />
             <div className='p-4'>
               <h3 className='text-xl font-semibold mb-2'>Rangamati</h3>
-              <p className='text-gray-600'>Rangamati</p>
+              <p className='text-gray-600'>Discover scenic lakes, green hills, and rich indigenous culture in the heart of the Chittagong Hill Tracts.</p>
             </div>
           </div>
 
@@ -130,6 +139,15 @@ function App() {
             </div>
           </div>
 
+          {/* Kuakata */}
+          <div className='border rounded-lg overflow-hidden shadow-lg'>
+            <img src={kuakataImg} alt="Kuakata" className='w-full h-48 object-cover' />
+            <div className='p-4'>
+              <h3 className='text-xl font-semibold mb-2'>Kuakata</h3>
+              <p className='text-gray-600'>Enjoy panoramic sea views and beautiful sunsets at the "Daughter of the Sea."</p>
+            </div>
+          </div>
+
           {/* Sundarban */}
           <div className='border rounded-lg overflow-hidden shadow-lg'>
             <img src={sundarbanImg} alt="Sundarbans" className='w-full h-48 object-cover' />
@@ -144,7 +162,46 @@ function App() {
         </div>
       </section>
 
+
+      <section>
+
+      </section>
+
      </main>
+     <footer>
+      <div className='text-center p-5 mt-20 bg-gray-200'>
+       <div>
+        <h2 className='text-2xl font-bold mb-4 text-center mt-10'>Stay Connected</h2>
+        <div className='flex justify-center gap-6'>
+          <input type="email" placeholder="Enter your email" className='border p-2 rounded-lg w-64' />
+          <button className='bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300'>Subscribe</button>
+        </div>
+       </div>
+      </div>
+      <div>
+        <div>
+   <h2 className="font-bold text-xl mb-3">About Us</h2>
+        <p class="text-gray-300 leading-relaxed">
+          The main motive of Hinduism is to achieve Moksha,
+          or liberation from the cycle of birth and death,
+          by realizing the true self (Atman) and uniting it with
+          the Supreme Reality (Brahman) through righteous living,
+          good deeds, knowledge, and devotion to God.
+        </p>
+        </div>
+        <div>
+<h2 className="font-bold text-xl">Contact Information</h2>
+<p className="mt-2 text-gray-300">For inquiries, please reach out to us at:</p>
+<p className="mt-1 text-gray-300">Email: r17.gfx@gmail.com</p>
+<p className="mt-1 text-gray-300">Phone: +88 01568931456</p>
+        </div>
+        <div>
+
+        </div>
+      </div>
+      <p className='text-center p-5 mt-20 bg-gray-300'>&copy; 2024 Tourism Bangladesh. All rights reserved.</p>
+     </footer>
+      {/*  */}
       
     </>
   )

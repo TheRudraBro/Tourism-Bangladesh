@@ -1,5 +1,12 @@
 import React from 'react'
 import logo from './assets/TourismBangladesh.png'
+import coxImg from './assets/coxbazar.png'
+import sylhetImg from './assets/sylhet.png'
+import sundarbanImg from './assets/sundarban.png'
+import sajekImg from './assets/sajek.png'
+import bandarbanImg from './assets/bandarban.png'
+import rangamatiImg from './assets/rangamati.png'
+import saintMartinImg from './assets/saintmartin.png'
 import './App.css'
 
 
@@ -13,7 +20,7 @@ function App() {
         <img className='h-50 w-50' src={logo} alt="Tourism Bangladesh" />
       </div>
       <div>
-        <ul className='flex justify-center gap-10 text-xl font-semibold p-20'>
+        <ul className='flex justify-center gap-10 text-xl font-serif p-20'>
           <li className='hover:text-blue-600 cursor-pointer'>Home</li>
           <li className='hover:text-blue-600 cursor-pointer'>Destinations</li>
           <li className='hover:text-blue-600 cursor-pointer'>Hotels</li>
@@ -33,30 +40,72 @@ function App() {
       <section className='max-w-6xl mx-auto mt-20'>
         <h2 className='text-3xl font-bold mb-8 text-center'>Popular Destinations</h2>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
-          <div className='border rounded-lg overflow-hidden shadow-lg'>
-            <img src="https://example.com/sundarbans.jpg" alt="Sundarbans" className='w-full h-48 object-cover' />
+
+          {/* Sajek */}
+ <div className='border rounded-lg overflow-hidden shadow-lg'>
+            <img src={sajekImg} alt="Sajek" className='w-full h-48 object-cover' />
             <div className='p-4'>
-              <h3 className='text-xl font-semibold mb-2'>Sundarbans</h3>
-              <p className='text-gray-600'>Experience the largest mangrove forest in the world and its unique wildlife.</p>
+              <h3 className='text-xl font-semibold mb-2'>Sajek</h3>
+              <p className='text-gray-600'>Sajek</p>
             </div>
           </div>
+
+          {/* Bandarban */}
+           <div className='border rounded-lg overflow-hidden shadow-lg'>
+            <img src={bandarbanImg} alt="Bandarban" className='w-full h-48 object-cover' />
+            <div className='p-4'>
+              <h3 className='text-xl font-semibold mb-2'>Bandarban</h3>
+              <p className='text-gray-600'>Bandarban</p>
+            </div>
+          </div>
+
+          {/* Rangamati */}
+            <div className='border rounded-lg overflow-hidden shadow-lg'>
+            <img src={rangamatiImg} alt="Rangamati" className='w-full h-48 object-cover' />
+            <div className='p-4'>
+              <h3 className='text-xl font-semibold mb-2'>Rangamati</h3>
+              <p className='text-gray-600'>Rangamati</p>
+            </div>
+          </div>
+
+           {/* Cox's Bazar */}
           <div className='border rounded-lg overflow-hidden shadow-lg'>
-            <img src="https://example.com/coxsbazar.jpg" alt="Cox's Bazar" className='w-full h-48 object-cover' />
+            <img src={coxImg} alt="Cox's Bazar" className='w-full h-48 object-cover' />
             <div className='p-4'>
               <h3 className='text-xl font-semibold mb-2'>Cox's Bazar</h3>
               <p className='text-gray-600'>Relax on the world's longest natural sea beach with stunning views.</p>
             </div>
           </div>
+
+              {/* Saint Martin */}
           <div className='border rounded-lg overflow-hidden shadow-lg'>
-            <img src="https://example.com/sylhet.jpg" alt="Sylhet" className='w-full h-48 object-cover' />
+            <img src={saintMartinImg} alt="Saint Martin" className='w-full h-48 object-cover' />
+            <div className='p-4'>
+              <h3 className='text-xl font-semibold mb-2'>Saint Martin</h3>
+              <p className='text-gray-600'>Relax on the world's longest natural sea beach with stunning views.</p>
+            </div>
+          </div>
+
+             {/* Sylhet */}
+          <div className='border rounded-lg overflow-hidden shadow-lg'>
+            <img src={sylhetImg} alt="Sylhet" className='w-full h-48 object-cover' />
             <div className='p-4'>
               <h3 className='text-xl font-semibold mb-2'>Sylhet</h3>
               <p className='text-gray-600'>Explore lush tea gardens and picturesque landscapes in the hills of Sylhet.</p>
             </div>
           </div>
-          <div>
-            
+
+          {/* Sundarban */}
+          <div className='border rounded-lg overflow-hidden shadow-lg'>
+            <img src={sundarbanImg} alt="Sundarbans" className='w-full h-48 object-cover' />
+            <div className='p-4'>
+              <h3 className='text-xl font-semibold mb-2'>Sundarbans</h3>
+              <p className='text-gray-600'>Experience the largest mangrove forest in the world and its unique wildlife.</p>
+            </div>
           </div>
+         
+       
+  
         </div>
       </section>
 

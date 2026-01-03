@@ -17,6 +17,7 @@ function App() {
 
   return (
     <>
+    {/* Navbar Start */}
     <nav className='max-w-[1700px] mx-auto flex justify-between items-center p-5'>
  <div className=''>
         <img className='h-50 w-50' src={logo} alt="Tourism Bangladesh" />
@@ -31,6 +32,7 @@ function App() {
         </ul>
       </div>
     </nav>
+    {/* Navbar End */}
      <header>
       <div className='text-center mt-20'>
         <h1 className='text-5xl font-bold mb-4'>Explore the Beauty of Bangladesh</h1>
@@ -38,6 +40,7 @@ function App() {
         <button className='bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300'>Get Started</button>
       </div>
      </header>
+     {/* Main Content Start */}
      <main>
       <section className='max-w-6xl mx-auto mt-20'>
         <h2 className='text-3xl font-bold mb-8 text-center'>Popular Destinations</h2>
@@ -53,11 +56,6 @@ function App() {
               <p className='text-gray-600'>Enjoy cloud-kissed hills, breathtaking sunsets, and serene views above the clouds.</p>
             </div>
           
-
-
-
-
-
            </div>
            {/* Details */}
        <div className="flex items-center justify-between px-6 pb-4">
@@ -92,28 +90,103 @@ function App() {
   </button>
 
 </div>
-
-
-
           </div>
 
-          {/* Bandarban */}
-           <div className='border rounded-lg overflow-hidden shadow-lg'>
+          
+             {/* Bandarban */}
+ <div className='border rounded-lg overflow-hidden shadow-lg'>
             <img src={bandarbanImg} alt="Bandarban" className='w-full h-48 object-cover' />
-            <div className='p-4'>
+           <div className='flex justify-between items-center p-3'>
+
+ <div className='p-4'>
               <h3 className='text-xl font-semibold mb-2'>Bandarban</h3>
-              <p className='text-gray-600'>Explore majestic hills, waterfalls, and untouched natural beauty in Bangladesh’s most adventurous region.</p>
+              <p className='text-gray-600'>Explore majestic hills, waterfalls, and untouched natural beauty in Bangladesh’s most adventurous region</p>
             </div>
+          
+           </div>
+           {/* Details */}
+       <div className="flex items-center justify-between px-6 pb-4">
+  
+  {/* Details Button */}
+  <div>
+    <button
+      className="btn w-36 h-12"
+      onClick={() => document.getElementById('my_modal_1').showModal()}
+    >
+      Details
+    </button>
+
+    <dialog id="my_modal_1" className="modal">
+      <div className="modal-box">
+        <h3 className="font-bold text-lg">Hello!</h3>
+        <p className="py-4">
+          {/* Details About Tour */}
+        </p>
+        <div className="modal-action">
+          <form method="dialog">
+            <button className="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  {/* Book Now Button */}
+  <button className="bg-blue-600 text-white w-36 h-12 rounded-lg transition duration-300">
+    Book Now
+  </button>
+
+</div>
           </div>
 
-          {/* Rangamati */}
-            <div className='border rounded-lg overflow-hidden shadow-lg'>
+          
+             {/* Rangamati */}
+ <div className='border rounded-lg overflow-hidden shadow-lg'>
             <img src={rangamatiImg} alt="Rangamati" className='w-full h-48 object-cover' />
-            <div className='p-4'>
+           <div className='flex justify-between items-center p-3'>
+
+ <div className='p-4'>
               <h3 className='text-xl font-semibold mb-2'>Rangamati</h3>
               <p className='text-gray-600'>Discover scenic lakes, green hills, and rich indigenous culture in the heart of the Chittagong Hill Tracts.</p>
             </div>
+          
+           </div>
+           {/* Details */}
+       <div className="flex items-center justify-between px-6 pb-4">
+  
+  {/* Details Button */}
+  <div>
+    <button
+      className="btn w-36 h-12"
+      onClick={() => document.getElementById('my_modal_1').showModal()}
+    >
+      Details
+    </button>
+
+    <dialog id="my_modal_1" className="modal">
+      <div className="modal-box">
+        <h3 className="font-bold text-lg">Hello!</h3>
+        <p className="py-4">
+          {/* Details About Tour */}
+        </p>
+        <div className="modal-action">
+          <form method="dialog">
+            <button className="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  {/* Book Now Button */}
+  <button className="bg-blue-600 text-white w-36 h-12 rounded-lg transition duration-300">
+    Book Now
+  </button>
+
+</div>
           </div>
+
+        
 
            {/* Cox's Bazar */}
           <div className='border rounded-lg overflow-hidden shadow-lg'>
@@ -122,6 +195,39 @@ function App() {
               <h3 className='text-xl font-semibold mb-2'>Cox's Bazar</h3>
               <p className='text-gray-600'>Relax on the world's longest natural sea beach with stunning views.</p>
             </div>
+            {/* Details */}
+       <div className="flex items-center justify-between px-6 pb-4">
+  
+  {/* Details Button */}
+  <div>
+    <button
+      className="btn w-36 h-12"
+      onClick={() => document.getElementById('my_modal_1').showModal()}
+    >
+      Details
+    </button>
+
+    <dialog id="my_modal_1" className="modal">
+      <div className="modal-box">
+        <h3 className="font-bold text-lg">Hello!</h3>
+        <p className="py-4">
+          {/* Details About Tour */}
+        </p>
+        <div className="modal-action">
+          <form method="dialog">
+            <button className="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  {/* Book Now Button */}
+  <button className="bg-blue-600 text-white w-36 h-12 rounded-lg transition duration-300">
+    Book Now
+  </button>
+
+</div>
           </div>
 
               {/* Saint Martin */}
@@ -131,6 +237,39 @@ function App() {
               <h3 className='text-xl font-semibold mb-2'>Saint Martin</h3>
               <p className='text-gray-600'>Relax on the world's longest natural sea beach with stunning views.</p>
             </div>
+            {/* Details */}
+       <div className="flex items-center justify-between px-6 pb-4">
+  
+  {/* Details Button */}
+  <div>
+    <button
+      className="btn w-36 h-12"
+      onClick={() => document.getElementById('my_modal_1').showModal()}
+    >
+      Details
+    </button>
+
+    <dialog id="my_modal_1" className="modal">
+      <div className="modal-box">
+        <h3 className="font-bold text-lg">Hello!</h3>
+        <p className="py-4">
+          {/* Details About Tour */}
+        </p>
+        <div className="modal-action">
+          <form method="dialog">
+            <button className="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  {/* Book Now Button */}
+  <button className="bg-blue-600 text-white w-36 h-12 rounded-lg transition duration-300">
+    Book Now
+  </button>
+
+</div>
           </div>
 
              {/* Sunamganj */}
@@ -140,6 +279,39 @@ function App() {
               <h3 className='text-xl font-semibold mb-2'>Tanguar Haor</h3>
               <p className='text-gray-600'>Relax on the world's longest natural sea beach with stunning views.</p>
             </div>
+            {/* Details */}
+       <div className="flex items-center justify-between px-6 pb-4">
+  
+  {/* Details Button */}
+  <div>
+    <button
+      className="btn w-36 h-12"
+      onClick={() => document.getElementById('my_modal_1').showModal()}
+    >
+      Details
+    </button>
+
+    <dialog id="my_modal_1" className="modal">
+      <div className="modal-box">
+        <h3 className="font-bold text-lg">Hello!</h3>
+        <p className="py-4">
+          {/* Details About Tour */}
+        </p>
+        <div className="modal-action">
+          <form method="dialog">
+            <button className="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  {/* Book Now Button */}
+  <button className="bg-blue-600 text-white w-36 h-12 rounded-lg transition duration-300">
+    Book Now
+  </button>
+
+</div>
           </div>
 
              {/* Sylhet */}
@@ -149,6 +321,39 @@ function App() {
               <h3 className='text-xl font-semibold mb-2'>Sylhet</h3>
               <p className='text-gray-600'>Explore lush tea gardens and picturesque landscapes in the hills of Sylhet.</p>
             </div>
+            {/* Details */}
+       <div className="flex items-center justify-between px-6 pb-4">
+  
+  {/* Details Button */}
+  <div>
+    <button
+      className="btn w-36 h-12"
+      onClick={() => document.getElementById('my_modal_1').showModal()}
+    >
+      Details
+    </button>
+
+    <dialog id="my_modal_1" className="modal">
+      <div className="modal-box">
+        <h3 className="font-bold text-lg">Hello!</h3>
+        <p className="py-4">
+          {/* Details About Tour */}
+        </p>
+        <div className="modal-action">
+          <form method="dialog">
+            <button className="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  {/* Book Now Button */}
+  <button className="bg-blue-600 text-white w-36 h-12 rounded-lg transition duration-300">
+    Book Now
+  </button>
+
+</div>
           </div>
 
           {/* Kuakata */}
@@ -158,6 +363,39 @@ function App() {
               <h3 className='text-xl font-semibold mb-2'>Kuakata</h3>
               <p className='text-gray-600'>Enjoy panoramic sea views and beautiful sunsets at the "Daughter of the Sea."</p>
             </div>
+            {/* Details */}
+       <div className="flex items-center justify-between px-6 pb-4">
+  
+  {/* Details Button */}
+  <div>
+    <button
+      className="btn w-36 h-12"
+      onClick={() => document.getElementById('my_modal_1').showModal()}
+    >
+      Details
+    </button>
+
+    <dialog id="my_modal_1" className="modal">
+      <div className="modal-box">
+        <h3 className="font-bold text-lg">Hello!</h3>
+        <p className="py-4">
+          {/* Details About Tour */}
+        </p>
+        <div className="modal-action">
+          <form method="dialog">
+            <button className="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  {/* Book Now Button */}
+  <button className="bg-blue-600 text-white w-36 h-12 rounded-lg transition duration-300">
+    Book Now
+  </button>
+
+</div>
           </div>
 
           {/* Sundarban */}
@@ -180,6 +418,7 @@ function App() {
       </section>
 
      </main>
+      {/* Main Content End */}
      <footer>
       <div className='text-center p-5 mt-20 bg-gray-200'>
        <div>

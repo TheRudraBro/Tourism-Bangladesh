@@ -52,36 +52,48 @@ function App() {
               <h3 className='text-xl font-semibold mb-2'>Sajek</h3>
               <p className='text-gray-600'>Enjoy cloud-kissed hills, breathtaking sunsets, and serene views above the clouds.</p>
             </div>
-            <div>
-              {/* Open the modal using document.getElementById('ID').showModal() method */}
-<button className="btn" onClick={()=>document.getElementById('my_modal_1').showModal()}>Details</button>
-<dialog id="my_modal_1" className="modal">
-  <div className="modal-box">
-    <h3 className="font-bold text-lg">Hello!</h3>
-    <p className="py-4">
-{/* Details About Tour */}
-
-    </p>
-    <div className="modal-action">
-      <form method="dialog">
-        {/* if there is a button in form, it will close the modal */}
-        <button className="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
-            </div>
+          
 
 
 
 
 
            </div>
-          <div className="flex justify-center pb-4">
-  <button className="bg-blue-600 text-white px-6 py-3 rounded-lg transition duration-300">
+           {/* Details */}
+       <div className="flex items-center justify-between px-6 pb-4">
+  
+  {/* Details Button */}
+  <div>
+    <button
+      className="btn w-36 h-12"
+      onClick={() => document.getElementById('my_modal_1').showModal()}
+    >
+      Details
+    </button>
+
+    <dialog id="my_modal_1" className="modal">
+      <div className="modal-box">
+        <h3 className="font-bold text-lg">Hello!</h3>
+        <p className="py-4">
+          {/* Details About Tour */}
+        </p>
+        <div className="modal-action">
+          <form method="dialog">
+            <button className="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </div>
+
+  {/* Book Now Button */}
+  <button className="bg-blue-600 text-white w-36 h-12 rounded-lg transition duration-300">
     Book Now
   </button>
+
 </div>
+
+
 
           </div>
 
